@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevFolio Website - Coding Power</title>
+
+    <!-- typed.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- scroll to top button -->
+    <button class="scrollbtn" id="btn" type="button" onclick="scrolltoTop()"><i class="fa fa-arrow-up"></i></button>
+
+    <!-- navbar code start here -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#home">Advik Vyas</a>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#home" onclick="menu()">Home</a></li>
+            <li><a href="#about" onclick="menu()">About</a></li>
+            <li><a href="#portfolio" onclick="menu()">Portfolio</a></li>   
+            <li><a href="#contact" onclick="menu()">Contact</a></li>
+        </ul>
+        <div class="menu-btn" onclick="menu()"><i class="fa fa-bars"></i></div>
+    </nav>
+
+    <!-- home section start here -->
+    <div class="home" id="home">
+        <div class="home-content">
+            <h1 class="name">I am Advik Vyas</h1>
+            <p><span class="typing"></span></p>
+        </div>
+    </div>
+
+    <!-- about section start here -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="info">
+                    <div class="personal">
+                        <div class="photo">
+                            <img src="images/testimonial-2.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p><span>Name:</span> Advik Vyas</p>
+                            <p><span>Profile:</span> Software Engineer and Programmer</p>
+                            <p><span>Email:</span> vyasadvik@gmail.com</p>
+                            <!-- <p><span>Phone:</span> 1234567890</p> -->
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h4>Skills</h4>
+                        <div class="skill">
+                            <span>Front-End (Web3)</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-line"><span class="html"></span></div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-line"><span class="python"></span></div>
+                        <div class="skill">
+                            <span>C/C++</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-line"><span class="gcc"></span></div>
+                        <div class="skill">
+                            <span>Node.Js</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-line"><span class="njs"></span></div>
+                        <div class="skill">
+                            <span>Pandas/Numpy/Matplotlib</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="progress-line"><span class="ds"></span></div>
+                    </div>
+                </div>
+                <div class="aboutme">
+                    <h5>About me</h5>
+                    <p>Hello there, my name is Advik Vyas and I live in New Delhi, India. I'm currently focused on Software development and Web applications.</p>
+                    <p>I am currently pursing my B.Tech degree in Computer Science in Software Engineering from SRM Institue of Science and Technology in Chennai.</p>
+                    <p>My future interests lie in Data Science, which i am currently learning, and Artificial Intelligence and Machine Learning.</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- portfolio section start here -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h3 class="title">Portfolio</h3>
+            <div class="line"></div>
+            <div class="portfolio-content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="images/work-1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Realtime Chat Application Using Socket.io</h3>
+                            <p><span class="category">Web Design</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="images/work-2.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Instragram Data Scraping & Analysis</h3>
+                            <p><span class="category">Data Science</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="images/work-3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Checking your Password's Strength</h3>
+                            <p><span class="category">Web Design</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="images/work-4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Project 4</h3>
+                            <p><span class="category">Web Design</span> / 20 Apr 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="images/work-5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Project 5</h3>
+                            <p><span class="category">Web Design</span> / 20 Apr 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="images/work-6.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Project 6</h3>
+                            <p><span class="category">Web Design</span> / 20 Apr 2020</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start here -->
+    <section class="contact" id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="contact-content">
+                
+                <div class="gettouch">
+                    <h3 class="heading">Get in Touch</h3>
+                    <div class="line"></div>
+                    <p>You can contact me via email, or through my social media.</p>
+                    <div class="info"><i class="fa fa-map-marker"></i>SRMIST Hostels, Kattankulathur</div>
+                    <div class="info"><i class="fa fa-phone"></i>9650965351</div>
+                    <div class="info"><i class="fa fa-envelope"></i>vyasadvik@gmail.com</div>
+                    <div class="social">
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-github"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+          
+        </footer>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
